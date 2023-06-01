@@ -24,13 +24,13 @@
     <div class="container align-items-center">
         <h1 class="text-center fw-lighter my-4 text-white">Gasto Semanal</h1>
         <div class="row border-0 rounded-3 bg-light p-4 columnas">
-            <div class="col">
+            <div class="col primario" id="primario">
                 <h2 class="my-5 text-center fw-lighter text-primary">Añade tus gastos aqui</h2>
-                <div></div>
+                <!-- <div></div> -->
                 <form id="agregar-gasto">
                     <div class="mb-3">
                         <label for="nombre" class="form-label fw-bolder">Gasto:</label>
-                        <input type="text" class="form-control" id="nombre" placeholder="Nombre gasto">
+                        <input type="text" class="form-control" id="gasto" placeholder="Nombre gasto">
                         <!-- <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div> -->
                     </div>
                     <div class="mb-3">
@@ -47,11 +47,11 @@
                     <ul class="list-group"></ul>
                 </div>
                 <div class="pt-4">
-                    <div class="bg-info p-3 mb-4 rounded-3">
-                        <p class="fw-bolder m-0">Presupuesto: <span id="total"></span></p>
+                    <div class="mb-4 alert alert-primary">
+                        <p class="fw-bolder m-0">Presupuesto: $ <span id="total" class="fw-lighter"></span></p>
                     </div>
-                    <div class="bg-success p-3 rounded-3">
-                        <p class="fw-bolder m-0">Restante: <span id="restante"></span></p>
+                    <div class="alert alert-success">
+                        <p class="fw-bolder m-0">Restante: $ <span id="restante" class="fw-lighter"></span></p>
                     </div>
                 </div>
             </div>
